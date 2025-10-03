@@ -67,9 +67,8 @@ A simple and free way to do this for development is using GitHub Gist:
 Now, you need to tell Okta to trust your application as a security event transmitter.
 
 1.  Log in to your Okta Admin Console.
-2.  Navigate to **Security \> API**.
-3.  Go to the **Security Events** tab (or a similar section for event providers).
-4.  Add a new integration or transmitter and provide the following:
+2.  Navigate to **Security \> Device Integrations \> Receive shared signals \> Create stream **.
+3.  Add a new integration or transmitter and provide the following:
       - **Issuer URL**: A unique URI that will identify your application. This URI must match the `ISSUER_URL` you will set in the `send-okta-event.js` script. Example: `https://my-ssf-transmitter.example.com`.
       - **JWKS URL**: The public URL where you hosted your `jwks.json` file in the previous step.
 
@@ -111,7 +110,7 @@ Generated Signed SET (JWT):
 
 Sending signed SET to endpoint: https://your-okta-domain.okta.com/security/api/v1/security-events
 
-✅ Success! Okta responded with: 204 No Content
+✅ Success! Okta responded with: 202
 This means the event was accepted successfully.
 ```
 
