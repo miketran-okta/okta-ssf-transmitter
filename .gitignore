@@ -1,0 +1,14 @@
+# Local key file
+private-keys.json
+
+# Node modules directory
+node_modules/
+
+# Lock file (optional, but often good practice for consistency)
+package-lock.json
+
+#jwks
+jwks.json
+
+#jwks
+jwks-working-example.json
